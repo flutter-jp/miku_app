@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miku/component/concat_me.dart';
+import 'package:miku/component/drawer_switch.dart';
 import 'package:miku/pages/home/my_comment.dart';
 import 'package:miku/pages/home/my_notice.dart';
 import 'package:miku/pages/home/my_search_box.dart';
@@ -16,6 +17,7 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               Column(
                 children: <Widget>[
+                  DrawerSwitch(),
                   MyNotice(),
                   MySearchBox(
                     color: Colors.white,

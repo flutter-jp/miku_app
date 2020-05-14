@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:miku/config/app_config.dart';
 import 'package:miku/pages/home/home_page.dart';
+import 'package:miku/pages/index.dart';
 
 ///
 /// 闪屏动画
@@ -39,7 +40,7 @@ class _SplashState extends State<SplashPage>
     var listener = (status) {
       if (status == AnimationStatus.completed) {
         Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (context) => HomePage()),
+            MaterialPageRoute(builder: (context) => IndexPage()),
             (router) => router == null);
       }
     };

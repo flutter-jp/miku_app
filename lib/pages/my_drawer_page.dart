@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:miku/config/app_config.dart';
 
 class MyDrawerPage extends StatelessWidget {
@@ -23,7 +24,39 @@ class MyDrawerPage extends StatelessWidget {
                   ),
                   fit: BoxFit.cover),
             ),
-          )
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.credit_card,
+              size: 30,
+              color: Theme.of(context).primaryColor,
+            ),
+            title: Text("会员中心"),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Theme.of(context).primaryColor,
+            ),
+            title: Text("更新日志"),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.widgets,
+              size: 30,
+              color: Theme.of(context).primaryColor,
+            ),
+            title: Text("贡献者名单"),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.info_outline,
+              size: 30,
+              color: Theme.of(context).primaryColor,
+            ),
+            title: Text("关于Miku"),
+          ),
         ],
       ),
     );

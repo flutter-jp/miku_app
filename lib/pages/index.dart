@@ -1,9 +1,8 @@
 import 'package:badges/badges.dart';
-
 import 'package:flutter/material.dart';
 import 'package:miku/pages/home/home_page.dart';
 import 'package:miku/pages/my_drawer_page.dart';
-import 'package:miku/pages/tool/tools_page.dart';
+import 'package:miku/pages/tool/tools_navigator_page.dart';
 
 /// 主面板：承载页面和导航
 class IndexPage extends StatefulWidget {
@@ -31,7 +30,7 @@ class _IndexPageState extends State<IndexPage> {
 
   final List<Widget> pages = [
     HomePage(),
-    ToolsPage(),
+    ToolsNavigatorPage(),
   ];
 
   List<BottomNavigationBarItem> buildNavigators(context) {

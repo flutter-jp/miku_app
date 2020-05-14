@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               Column(
                 children: <Widget>[
-                  DrawerSwitch(),
+                  MyAppBar(drawContext: context,),
                   MyNotice(),
                   MySearchBox(
                     color: Colors.white,

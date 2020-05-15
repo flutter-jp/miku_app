@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 enum AnimType {
   Slider, // 进入从右往左滑入，退出从左往右滑出

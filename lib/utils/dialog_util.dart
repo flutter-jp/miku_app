@@ -35,12 +35,12 @@ class DialogUtil {
     context,
     String title,
     Widget widget, {
-    width = 220.0,
+    double width = 220.0,
     height,
     titleColor = Colors.black,
     titleFontSize = 14.0,
-    borderRadius = 10.0,
-    titlePadding = 25.0,
+    double borderRadius = 10.0,
+    double titlePadding = 25.0,
     showCallback,
     dismissCallback,
   }) {

@@ -7,42 +7,19 @@ class MyComment extends StatelessWidget {
     return Container(
       width: double.infinity,
       padding: EdgeInsets.all(10),
-      child: Card(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(10),
-              width: 100,
-              margin: EdgeInsets.all(10),
-              decoration: BoxDecoration(color: Theme.of(context).primaryColor),
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.volume_up,
-                    color: Colors.white,
-                  ),
-                  Text(
-                    "公告",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Column(
-              children: <Widget>[
-                _buildBadge(),
-                _buildVIPLink(),
-                _buildCurrentDomainLink(),
-                _buildConcatLink(),
-                _buildDomainLink(),
-              ],
-            )
-          ],
-        ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Column(
+            children: <Widget>[
+              _buildBadge(),
+              _buildVIPLink(),
+              _buildCurrentDomainLink(),
+              _buildConcatLink(),
+              _buildDomainLink(),
+            ],
+          )
+        ],
       ),
     );
   }

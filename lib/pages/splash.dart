@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:miku/config/app_config.dart';
-import 'package:miku/pages/home/home_page.dart';
 import 'package:miku/pages/index.dart';
 
 ///

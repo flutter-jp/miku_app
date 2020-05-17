@@ -1,7 +1,9 @@
 import 'package:cookie_jar/cookie_jar.dart';
 import 'package:dio/dio.dart';
 import 'package:dio_cookie_manager/dio_cookie_manager.dart';
+import 'package:dio_log/interceptor/dio_log_interceptor.dart';
 import 'package:miku/config/api.dart';
+import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 class HttpUtil {
   static HttpUtil instance;
@@ -42,6 +44,11 @@ class HttpUtil {
 
     //Cookie管理
     dio.interceptors.add(CookieManager(CookieJar()));
+    // 美化 json
+    dio.interceptors.add(PrettyDioLogger());
+    // 日志监控
+    dio.interceptors.add(DioLogInterceptor());
+
 
     //添加拦截器
     dio.interceptors

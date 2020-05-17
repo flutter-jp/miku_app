@@ -46,6 +46,10 @@ dependencies:
   dio_cookie_manager: ^1.0.0
   # cookie
   cookie_jar: ^1.0.1
+  # dio log美化
+  pretty_dio_logger: ^1.1.1
+  # log button
+  dio_log: ^1.3.3
   # 滑动删除
   flutter_slidable: ^0.5.4
   # 通用包

@@ -44,7 +44,7 @@ class MyDrawerPage extends StatelessWidget {
               leading: Icon(
                 Icons.credit_card,
                 size: 30,
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).textTheme.subtitle1.color,
               ),
               title: Text("最新公告"),
             ),
@@ -53,7 +53,7 @@ class MyDrawerPage extends StatelessWidget {
             leading: Icon(
               Icons.credit_card,
               size: 30,
-              color: Theme.of(context).primaryColor,
+              color: Theme.of(context).textTheme.subtitle1.color,
             ),
             title: Text("会员中心"),
           ),
@@ -61,7 +61,7 @@ class MyDrawerPage extends StatelessWidget {
             leading: Icon(
               Icons.person,
               size: 30,
-              color: Theme.of(context).primaryColor,
+              color: Theme.of(context).textTheme.subtitle1.color,
             ),
             title: Text("更新日志"),
           ),
@@ -80,7 +80,7 @@ class MyDrawerPage extends StatelessWidget {
               leading: Icon(
                 Icons.widgets,
                 size: 30,
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).textTheme.subtitle1.color,
               ),
               title: Text("联系我"),
             ),
@@ -100,7 +100,7 @@ class MyDrawerPage extends StatelessWidget {
               leading: Icon(
                 Icons.info_outline,
                 size: 30,
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).textTheme.subtitle1.color,
               ),
               title: Text("关于Miku"),
             ),

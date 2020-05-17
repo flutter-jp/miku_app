@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:miku/bean/tools_item_bean.dart';
+import 'package:miku/model/theme_model.dart';
 import 'package:miku/pages/drawer/my_drawer_page.dart';
 import 'package:miku/pages/tool/tools_page.dart';
+import 'package:provider/provider.dart';
 
 class IndexPage extends StatelessWidget {
   final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
@@ -10,9 +12,11 @@ class IndexPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var tabList = getTabs();
+    bool lighted = Provider.of<ThemeModel>(context, listen: false).lighted;
     return DefaultTabController(
       length: tabList.length,
       child: Scaffold(
+        backgroundColor: Theme.of(context).backgroundColor,
         key: _drawerKey,
         drawer: MyDrawerPage(),
         appBar: AppBar(
@@ -25,10 +29,22 @@ class IndexPage extends StatelessWidget {
           actions: <Widget>[
             Container(
                 padding: EdgeInsets.only(right: 20),
-                child: Icon(
-                  FontAwesomeIcons.moon,
-                  color: Colors.white,
-                  size: 20,
+                child: IconButton(
+                  icon: lighted
+                      ? Icon(
+                          FontAwesomeIcons.moon,
+                          color: Colors.white70,
+                          size: 20,
+                        )
+                      : Icon(
+                          FontAwesomeIcons.lightbulb,
+                          color: Colors.white70,
+                          size: 20,
+                        ),
+                  onPressed: () {
+                    Provider.of<ThemeModel>(context, listen: false)
+                        .changeTheme();
+                  },
                 )),
           ],
           title: Text("Miku tools"),

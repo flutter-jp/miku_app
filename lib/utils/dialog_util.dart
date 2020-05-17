@@ -53,7 +53,7 @@ class DialogUtil {
         padding: EdgeInsets.all(titlePadding),
         alignment: Alignment.center,
         text: title,
-        color: titleColor,
+        color: titleColor?? Theme.of(context).textTheme.subtitle1.color,
         fontSize: titleFontSize,
         fontWeight: FontWeight.w500,
       )

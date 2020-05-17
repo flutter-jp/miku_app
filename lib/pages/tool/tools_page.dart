@@ -33,6 +33,9 @@ class ToolsPage extends StatelessWidget {
             ),
             child: Text(
               item.name,
+              style: TextStyle(
+                color: Theme.of(context).textTheme.subtitle1.color,
+              ),
             ),
           );
         }).toList(),

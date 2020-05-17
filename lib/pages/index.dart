@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:miku/bean/tools_item.dart';
+import 'package:miku/bean/tools_item_bean.dart';
 import 'package:miku/pages/drawer/my_drawer_page.dart';
 import 'package:miku/pages/tool/tools_page.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:miku/bean/tools_item.dart';
+import 'package:miku/bean/tools_item_bean.dart';
 
 class ToolsPage extends StatelessWidget {
   final Icon icon;
